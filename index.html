@@ -34,6 +34,9 @@
 <!-- VK Group Widget demo scripts -->
 <script src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.2.1/dist/index.umd.js"></script>
 <script>
+  
+  console.log("test");
+  
   const APP_ID = 7710582;
   const VK_API_VERSION = "5.103";
   let group_id;
@@ -45,6 +48,7 @@
     group_id = +inGroup.value;
     console.log("Selected", group_id);
   });
+  
 
   const output = document.getElementById('el-output');
   output.style.display = "none";
